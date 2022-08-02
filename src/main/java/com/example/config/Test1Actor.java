@@ -20,7 +20,7 @@ public class Test1Actor extends AbstractActor {
     @Override
     public Receive createReceive() {
         return receiveBuilder().match(Message.class, o -> {
-            System.out.println("接收到消息" + o.toString());
+            System.out.println("接收到消息" + o.getContent().toString());
             // ActorSystem.create("child", actorSystem.)
 
             System.out.println("-------------");

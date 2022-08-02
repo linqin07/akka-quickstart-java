@@ -12,6 +12,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -35,7 +36,8 @@ public class AkkaQuickstartTest {
         // actorRef1.tell("h2ello", akka.actor.ActorRef.noSender());
         // actorRef1.tell("h2ello1", akka.actor.ActorRef.noSender());
         // actorRef1.tell("h2ello2", akka.actor.ActorRef.noSender());
-        System.in.read();
+        // System.in.read();
+        TimeUnit.SECONDS.sleep(5);
 
     }
 }
